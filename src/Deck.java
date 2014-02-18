@@ -5,22 +5,28 @@ public class Deck {
 
     // Standard Deck, no Jokers
 
-    private ArrayList<Card> deck = new ArrayList<Card>();
+    public ArrayList<Card> deck;
 
     public Deck(){
+        deck = new ArrayList<Card>();
         for (int r = 0; r < 13; r++)
             for(int s = 0; s < 4; s++)
                 deck.add(new Card(r, s));
+
+    }
+
+    public Deck(ArrayList<Card> cardArrayList){
+        deck = cardArrayList;
     }
 
     public Card deal() {
         return deck.remove(0);
     }
 
-    public Card[] deal(int numcards){
-        Card[] cardsToDeal = new Card[numcards];
+    public ArrayList<Card> deal(int numcards){
+        ArrayList<Card> cardsToDeal = new ArrayList<Card>();
         for (int i = 0; i < numcards; i++) {
-            cardsToDeal[i] = deal();
+            cardsToDeal.add(this.deck.remove(0));
         }
         return cardsToDeal;
     }
@@ -33,24 +39,10 @@ public class Deck {
         return deck.size();
     }
 
-
     public boolean isEmpty() {
         return this.numCardsRemaining() == 0;
     }
 
 
-    public static void main (String[] args) {
-
-        System.out.println("Creating Deck..");
-        Deck d = new Deck();
-        d.shuffle();
-        System.out.println("Shuffling Deck..");
-        d.shuffle();
-        System.out.println("Dealing Cards..");
-        while(!d.isEmpty()){
-            System.out.println(d.numCardsRemaining());
-            d.deal().printCard();
-        }
-    }
 
 }
