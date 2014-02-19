@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8aa10ef-396a-4f72-9468-511bbaab1691" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Card.java" afterPath="$PROJECT_DIR$/src/Card.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CribbageScorer.java" afterPath="$PROJECT_DIR$/src/CribbageScorer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cribbage.iws" />
@@ -98,19 +101,23 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="49" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+            <state line="33" column="9" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
               <folding>
-                <element signature="e#270#278#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#300#308#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CribbageScorer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CribbageScorer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CribbageScorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="56" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1615">
-              <folding />
+            <state line="94" column="8" selection-start="3364" selection-end="3364" vertical-scroll-proportion="0.33420366" vertical-offset="1214" max-vertical-offset="2652">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4736#4742#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,10 +126,7 @@
         <entry file="file://$PROJECT_DIR$/src/Crib.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <folding>
-                <marker date="1392692289346" expanded="true" signature="137:169" placeholder="{...}" />
-                <marker date="1392692289346" expanded="true" signature="266:304" placeholder="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,7 +134,7 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-37.307693" vertical-offset="16" max-vertical-offset="1139">
+            <state line="58" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-31.423077" vertical-offset="169" max-vertical-offset="1139">
               <folding>
                 <element signature="e#444#445#0" expanded="true" />
                 <element signature="e#476#477#0" expanded="true" />
@@ -143,16 +147,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CribbageHand.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CribbageHand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CribbageHand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="191" selection-end="191" vertical-scroll-proportion="0.159375" vertical-offset="0" max-vertical-offset="960">
+            <state line="27" column="37" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#153#159#0" expanded="true" />
                 <element signature="e#466#467#0" expanded="true" />
                 <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
                 <element signature="e#582#583#0" expanded="true" />
               </folding>
             </state>
@@ -184,10 +187,10 @@
       <file leaf-file-name="Card.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="1" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+            <state line="50" column="0" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
               <folding>
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,13 +217,13 @@
         <option value="$PROJECT_DIR$/src/Deck.java" />
         <option value="$PROJECT_DIR$/src/CribbageCard.java" />
         <option value="$PROJECT_DIR$/src/CribbageDeck.java" />
-        <option value="$PROJECT_DIR$/src/Card.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/CribbageGame.java" />
         <option value="$PROJECT_DIR$/src/Crib.java" />
+        <option value="$PROJECT_DIR$/src/CribbageHand.java" />
+        <option value="$PROJECT_DIR$/src/Card.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/CribbageScorer.java" />
-        <option value="$PROJECT_DIR$/src/CribbageHand.java" />
       </list>
     </option>
   </component>
@@ -567,8 +570,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1576" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1576" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -581,14 +584,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287951" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287951" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13515624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20013614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20013614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="919" y="440" width="1200" height="800" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -634,8 +637,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="12" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="595">
           <folding>
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,8 +657,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="12" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="595">
           <folding>
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -674,8 +677,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="12" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="595">
           <folding>
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,61 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CribbageGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CribbageScorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="56" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="49" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding>
-            <element signature="e#270#278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Crib.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding>
-            <marker date="1392692289346" expanded="true" signature="137:169" placeholder="{...}" />
-            <marker date="1392692289346" expanded="true" signature="266:304" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-37.307693" vertical-offset="16" max-vertical-offset="1139">
-          <folding>
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Track.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
@@ -777,26 +725,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Card.java">
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="1" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+        <state line="58" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-31.423077" vertical-offset="169" max-vertical-offset="1139">
           <folding>
-            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CribbageGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="31" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Crib.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CribbageHand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="191" selection-end="191" vertical-scroll-proportion="0.159375" vertical-offset="0" max-vertical-offset="960">
+        <state line="27" column="37" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#153#159#0" expanded="true" />
             <element signature="e#466#467#0" expanded="true" />
             <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
             <element signature="e#582#583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="9" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+          <folding>
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CribbageScorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="8" selection-start="3364" selection-end="3364" vertical-scroll-proportion="0.33420366" vertical-offset="1214" max-vertical-offset="2652">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4736#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
