@@ -55,11 +55,15 @@ public class CribbageScorer {
     }
 
     public int scorePairs(CribbageHand hand, Card cutCard){
-        int score = 0;
-        hand.getHand().add(cutCard);
-        for(int i = 0; i < hand.getHand().size(); i++){
-            for(int j = i + 1; j < hand.getHand().size(); j++){
-                if (hand.getHand().get(i).getRankName().equals(hand.getHand().get(j).getRankName())){
+        ArrayList<Card> forCopy = new ArrayList<Card>();
+        forCopy = (ArrayList<Card>) hand.getHand().clone();
+        CribbageHand tempHand = new CribbageHand();
+        tempHand.setHand(forCopy);
+        tempHand.addCard(cutCard);
+	    int score = 0;
+        for(int i = 0; i < tempHand.getHand().size(); i++){
+            for(int j = i + 1; j < tempHand.getHand().size(); j++){
+                if (tempHand.getHand().get(i).getRankName().equals(tempHand.getHand().get(j).getRankName())){
                     score += 2;
                 }
             }
@@ -72,15 +76,18 @@ public class CribbageScorer {
     }
 
     public int scoreFifteens(CribbageHand hand, Card cutCard){
+        ArrayList<Card> forCopy = new ArrayList<Card>();
+        forCopy = (ArrayList<Card>) hand.getHand().clone();
+        CribbageHand tempHand = new CribbageHand();
+        tempHand.setHand(forCopy);
+        tempHand.addCard(cutCard);
         int score = 0;
-        hand.getHand().add(cutCard);
         int [][] cardCombos = { {0,1,2,3,4} , {0,1,2,3} , {0,1,2,4} , {0,1,3,4} , {0,2,3,4} , {1,2,3,4} , {0,1,2} , {0,1,3} , {0,1,4} , {0,2,3} , {0,2,4} , {0,3,4} , {1,2,3} , {1,2,4} , {1,3,4} , {2,3,4} , {0,1} , {0,2} , {0,3} , {0,4} , {1,2} , {1,3} , {1,4} , {2,3}, {2,4} , {3,4} };
         for(int [] combo: cardCombos){
             int total = 0;
             for(int index: combo){
-                total = total + hand.getHand().get(index).getCountValue();
+                total = total + tempHand.getHand().get(index).getCountValue();
             }
-            System.out.println("Combo total: " + total);
             if (total == 15) score = score + 2;
         }
         return score;
@@ -91,11 +98,15 @@ public class CribbageScorer {
     }
 
     public int scoreRuns(CribbageHand hand, Card cutCard){
-        hand.getHand().add(cutCard);
-        for(Card c: hand.getHand()){
+        ArrayList<Card> forCopy = new ArrayList<Card>();
+        forCopy = (ArrayList<Card>) hand.getHand().clone();
+        CribbageHand tempHand = new CribbageHand();
+        tempHand.setHand(forCopy);
+        tempHand.addCard(cutCard);
+        for(Card c: tempHand.getHand()){
             System.out.println(c.getRankAndSuitName());
         }
-        Collections.sort(hand.getHand());
+        Collections.sort(tempHand.getHand());
 
         int [][] fiveCardCombos = { {0,1,2,3,4} };
         int [][] fourCardCombos = { {0,1,2,3}, {0,1,2,4}, {0,1,3,4} , {0,2,3,4} , {1,2,3,4} };
@@ -103,21 +114,18 @@ public class CribbageScorer {
 
         int runScore = 0;
         for(int [] combo: fiveCardCombos){
-            runScore = runScore + testRunAndReturnScore(hand, combo);
+            runScore = runScore + testRunAndReturnScore(tempHand, combo);
         }
-        System.out.println("five card runs score: " + runScore);
         if (runScore > 0) return runScore;
 
         for(int [] combo: fourCardCombos){
-            runScore = runScore + testRunAndReturnScore(hand, combo);
+            runScore = runScore + testRunAndReturnScore(tempHand, combo);
         }
-        System.out.println("four card runs score: " + runScore);
         if (runScore > 0) return runScore;
 
         for(int [] combo: threeCardCombos){
-            runScore = runScore + testRunAndReturnScore(hand, combo);
+            runScore = runScore + testRunAndReturnScore(tempHand, combo);
         }
-        System.out.println("three card runs score: " + runScore);
         return runScore;
     }
 
@@ -127,24 +135,15 @@ public class CribbageScorer {
 
     public int testRunAndReturnScore(CribbageHand hand, int [] oneCombo){
         ArrayList<Card> cardsToExamine = new ArrayList<Card>();
-//        for(int i=0; i<oneCombo.length; i++) {
-//            System.out.println("Getting oneCombo sub "+i);
-//            System.out.println("which is card number "+oneCombo[i]+" in the hand");
-//            System.out.println("and that card is the "+hand.getHand().get(oneCombo[i]).getRankAndSuitName());
-//            cardsToExamine.add(hand.getHand().get(oneCombo[i]));
-//        }
-//        for(Card c: hand.getHand()){
-//            System.out.println(c.getRankAndSuitName());
-//        }
+        for(int i=0; i<oneCombo.length; i++) {
+            cardsToExamine.add(hand.getHand().get(oneCombo[i]));
+        }
         Collections.sort(cardsToExamine);
-//        for(Card c: cardsToExamine){
-//            System.out.println(c.getRankAndSuitName());
-//        }
-        int lowRank = cardsToExamine.get(0).getRank();
-        System.out.println("low rank:" + lowRank);
-        int highRank = cardsToExamine.get(cardsToExamine.size() - 1).getRank();
-        System.out.println("high rank:" + highRank);
-        if(highRank-lowRank == (cardsToExamine.size() - 1)) return cardsToExamine.size();
-        else return 0;
+        int currentRank = cardsToExamine.get(0).getRank();
+        for(int i=1; i<cardsToExamine.size(); i++){
+            if (cardsToExamine.get(i).getRank() == currentRank+1) currentRank++;
+            else return 0;
+        }
+        return cardsToExamine.size();
     }
 }
